@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>컴퓨터 공학과 소개</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .student {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .student img {
+      max-width: 200px;
+      float: left;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="history.back()">뒤로가기</button>
+  <h1>컴퓨터 공학과 소개</h1>
+  <p>컴퓨터 공학과는 소프트웨어 및 하드웨어 설계, 개발, 구현 등의 분야를 연구하고 있습니다.</p>
+
+  <h2>학생 소개</h2>
+  <div class="student">
+    <img src="https://s3.ap-northeast-2.amazonaws.com/blog.spartacodingclub.kr/210817_2.png" alt="홍근호">
+    <h3>홍근호</h3>
+    <p>웹 개발에 관심이 많으며, JavaScript와 python을 공부하고 있습니다.</p>
+  </div>
+
+  <div class="student">
+    <img src="https://cwn.kr/news/data/2021/09/09/p179564760709591_186.jpg" alt="이기찬">
+    <h3>이기찬</h3>
+    <p>게임개발에 관심이 많으며, 게임개발과 관련있는 python을 공부하고 있습니다..</p>
+  </div>
+
+  <div class="student">
+    <img src="https://www.irobotnews.com/news/photo/202302/30938_66828_4424.png" alt="주예돈">
+    <h3>주예돈</h3>
+    <p>로봇공학과 프로그래밍에 관심이 많으며, 로봇공학과 관련된 프로그래밍(c언어)을 배우고 있습니다.</p>
+  </div>
+
+  <script>
+    // 학생 소개 섹션에 마우스를 올리면 배경색 변경
+    const students = document.querySelectorAll('.student');
+    students.forEach(student => {
+      student.addEventListener('mouseover', () => {
+        student.style.backgroundColor = '#f5f5f5';
+      });
+      student.addEventListener('mouseout', () => {
+        student.style.backgroundColor = 'white';
+      });
+    });
+  </script>
+</body>
+</html>
